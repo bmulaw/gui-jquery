@@ -1,0 +1,61 @@
+<!-- 
+    Name: Bernard Mulaw
+    Class: GUI 
+    Prof: Weijin Zhou
+    Date: 07/29/2021
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <!-- learned how to use script tag from you, Professor Zhang -->
+    <script src="js/app.js"></script>
+    <h1>
+        Multiplication Table
+    </h1>
+    <!-- probably not the best description but i like to keep it brief and not overwhelming -->
+    <p>
+        select the start and end numbers for <b>width</b><br>
+        and select the start and endd numbers for <b>height</b>
+    </p>
+    <br><br>
+    <form id="myForm">
+        <span>
+            <!-- learned how to use &emsp; through link below - helps with spacing -->
+            <!-- https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ -->
+            <label id="fname">Min Width: &emsp;
+            <input type="number" id="minW" placeholder="enter a number">  &emsp; &ensp; 
+            <label id="fname">Max Width:</label>&emsp;
+            <input type="number" id="maxW" placeholder="enter a number">
+            <!-- i set the input type as number so avoid inputs of strings -->
+        </span>
+        <br><br><br>
+        <span>
+            <!-- https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ -->
+            <label id="fname">Min Height: </label> &emsp;
+            <input type="number" id="minH" placeholder="enter a number">  &emsp;&emsp;&emsp;
+            <label id="fname">Max Height: </label> &emsp;
+            <input type="number" id="maxH" placeholder="enter a number">
+        </span>
+        <!-- this is where my error message will be displayed from JS. initialized to empty -->
+        <div id="error">
+            
+        </div>
+    </form>
+    <!-- button click of Make Table calls makeTable function in JS -->
+    <button onclick="makeTable()">Make Table</button>
+    <!-- button click of Reset calls reset function in JS -->
+    <button id="resetBtn" onclick="reset()">Reset Page</button>
+    <!-- this is where my table will be made/displayed from JS. Initialized to empty table tag -->
+    <table id="myTable">
+        
+    </table>
+
+</body>
+</html>

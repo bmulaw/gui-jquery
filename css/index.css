@@ -1,0 +1,59 @@
+* {
+    /* feeling like nature so i choose these color themes :) */
+    background-color:papayawhip;
+    color: darkgreen;
+    text-align: center;
+}
+
+h1 {
+    /* want the title to be big and readable */
+    font-size: 50px;
+}
+
+label {
+    /* set my labels of boxes to 24px so they stand out */
+    font-size: 24px;
+}
+
+#minW, #maxW, #minH, #maxH {
+    /* gave enough width for space on writing inputs for user */
+    width: 125px;
+}
+
+button {
+    /* button text size is set to be readable and clickable with a pointer with ample space */
+    font-size: 20px;
+    cursor: pointer;
+    width: 130px;
+    /* chose green background with white text so user knows this is the button they want to choose */
+    background-color: green;
+    color: white;
+}
+
+button:hover {
+    /* hovering over button changes background to white so user can understand they are about to click a good button */
+    background-color: white;
+    color: green;
+}
+
+#resetBtn {
+    /* set margin so it is a bit distanced from green button */
+    margin: 2% 0px 0px 3%;
+    /* chose red background with black text so user knows this is the button they want to be cautious about clicking (it resets everything) */
+    background-color: red;
+    color: black;
+}
+
+#resetBtn:hover {
+    /* hovering over reset button changes background to black so user can understand they are about to click a dangerous button */
+    background-color: black;
+    color: white;
+}
+
+table {
+    /* table color is set to burlywood so its readable with whole page background */
+    background-color: burlywood;
+    /* margin top and left is so the table is centered on page and has ample space to display */
+    margin-top: 10%;
+    margin-left: 40%;
+}
