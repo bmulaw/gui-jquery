@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Multiplication Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script src="js/copy.js"></script>
 </head>
 <body>
     <!-- learned how to use script tag from you, Professor Zhang -->
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+    
     <h1>
         Multiplication Table
     </h1>
@@ -38,7 +38,7 @@
             <input type="number" id="maxW" placeholder="enter a number">
             <!-- i set the input type as number so avoid inputs of strings -->
         </span>
-        <br><br><br>
+        <br><br><br><br><br><br>
         <span>
             <!-- https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/ -->
             <label id="fname">Min Height: </label> &emsp;
@@ -46,15 +46,21 @@
             <label id="fname">Max Height: </label> &emsp;
             <input type="number" id="maxH" placeholder="enter a number">
         </span>
+        <br><br><br><br><br><br>
         <!-- this is where my error message will be displayed from JS. initialized to empty -->
-        <div id="error">
+        <div id="errorW">
             
         </div>
+        
+        <div id="errorH">
+            
+        </div>
+        
     </form>
     <!-- button click of Make Table calls makeTable function in JS -->
     <button onclick="makeTable()">Make Table</button>
     <!-- button click of Reset calls reset function in JS -->
-    <button id="resetBtn" onclick="reset()">Reset Page</button>
+    <button id="resetBtn" onclick="location.reload()">Reset Page</button>
     <!-- this is where my table will be made/displayed from JS. Initialized to empty table tag -->
     <table id="myTable">
         
